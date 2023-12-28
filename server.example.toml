@@ -46,7 +46,7 @@ token-hs256-secret-base64 = "d3lsYUFOR3lJM3NGWkRzaFFpVElDUmRETW54RXpiUFNFVjZBRG9
 # Connection URL
 #
 # For production use it's recommended to use PostgreSQL.
-url = "sqlite:///root/.local/share/attic/server.db"
+url = "sqlite:///data/server.db"
 
 # Whether to enable sending on periodic heartbeat queries
 #
