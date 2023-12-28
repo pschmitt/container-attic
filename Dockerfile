@@ -1,9 +1,7 @@
 FROM nixos/nix:latest
 
 RUN echo "experimental-features = flakes nix-command" >> /etc/nix/nix.conf && \
-    nix profile install 'github:zhaofengli/attic#attic'
-
-RUN nix profile install 'nixpkgs#gnused'
+    nix profile install 'nixpkgs#gnused' 'github:zhaofengli/attic#attic'
 
 COPY ./server.example.toml /config/server.toml
 COPY ./entrypoint.sh /entrypoint.sh
