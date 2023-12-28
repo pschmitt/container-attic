@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       image_name: ${{ github.repository }}
-      platforms: linux/amd64,linux/arm64
+      # platforms: linux/amd64,linux/arm64
+      # FIXME arm64 takes forever to build
+      platforms: linux/amd64
 
     steps:
       - name: Checkout
