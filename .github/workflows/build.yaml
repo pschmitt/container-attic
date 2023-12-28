@@ -10,7 +10,8 @@ jobs:
   docker-buildx:
     runs-on: ubuntu-latest
     env:
-      image_name: ${{ github.repository }}
+      # image_name: ${{ github.repository }}
+      image_name: pschmitt/attic
       # platforms: linux/amd64,linux/arm64
       # FIXME arm64 takes forever to build
       platforms: linux/amd64
