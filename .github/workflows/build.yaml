@@ -10,7 +10,7 @@ jobs:
   docker-buildx:
     runs-on: ubuntu-latest
     env:
-      image_name: $GITHUB_REPOSITORY
+      image_name: ${{ GITHUB_REPOSITORY }}
       platforms: linux/amd64,linux/arm64
 
     steps:
