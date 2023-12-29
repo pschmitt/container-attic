@@ -34,7 +34,8 @@ database_init() {
   unset db_path
 }
 
-if [ -z "$ATTIC_SERVER_TOKEN_HS256_SECRET_BASE64" ]
+if [ -z "$ATTIC_SERVER_TOKEN_HS256_SECRET_BASE64" ] || \
+   [ "$ATTIC_SERVER_TOKEN_HS256_SECRET_BASE64" = "changeme" ]
 then
   {
     echo "ERROR: ATTIC_SERVER_TOKEN_HS256_SECRET_BASE64 is not set"

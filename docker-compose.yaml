@@ -6,8 +6,8 @@ services:
     image: ghcr.io/pschmitt/attic:latest
     ports:
       - "8080:8080"
-    # environment:
-    # - "ATTIC_SERVER_TOKEN_HS256_SECRET_BASE64=CHANGE-ME"
+    environment:
+    - "ATTIC_SERVER_TOKEN_HS256_SECRET_BASE64=changeme"
     volumes:
       # - ./config:/config
       - ./data:/data
