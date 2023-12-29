@@ -1,3 +1,5 @@
+# There are no upstream releases yet
+# hadolint ignore=DL3007
 FROM ghcr.io/zhaofengli/attic:latest
 
 COPY ./server.example.toml /config/server.toml
